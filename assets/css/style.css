@@ -21,7 +21,7 @@ nav {
     height: 81px;
     max-width: 960px;
     margin: auto;
-    background-color: #0fb0e0;
+    background-color: #ffffff;
 }
 
 main {
@@ -106,8 +106,10 @@ img.headshot {
 }
 
 img.portfolio {
-
-}
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+  }
 
 form {
 
