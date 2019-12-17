@@ -9,18 +9,18 @@ body{
 
 header {
     position: relative;
-    height: 100px;
-    width: 960px;
+    height: 120px;
+    width: 100%;
     margin: auto;
     background-color: #ffffff;
 
 }
 
 nav {
-    height: auto;
+    height: 81px;
     max-width: 960px;
     margin: 20px 0px 0px 20px;
-
+    background-color: #0fb0e0;
 }
 
 main {
@@ -33,7 +33,15 @@ main {
 }
 
 footer {
-
+    position: sticky;
+    bottom: 0;
+    width:100%;
+    height: 40px;
+    margin: auto;
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;  
+    align-content: center;
+    overflow: auto;
 }
 
 h1 {
@@ -41,6 +49,16 @@ h1 {
     color: #4aaaa5;
     font-size: 40px;
     padding: 10px;
+}
+
+h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background-color: #666666;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+
 }
 
 hr {
@@ -63,6 +81,7 @@ hr {
 a.pagetags {
     float: right;
     padding: 20px;
+    font-size: 20px;
     border: 0px;
     margin: 0px;
     width: auto;
