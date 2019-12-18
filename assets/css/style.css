@@ -18,10 +18,11 @@ header {
 }
 
 nav {
-    height: 81px;
+    height: 80px;
     max-width: 960px;
     margin: auto;
     background-color: #ffffff;
+    padding-top: 20px;
 }
 
 main {
@@ -48,8 +49,8 @@ footer {
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4aaaa5;
-    font-size: 40px;
-    padding: 10px;
+    font-size: 30px;
+    padding: 25px 20px 10px 25px;
 }
 
 h6 {
@@ -69,6 +70,8 @@ hr {
     margin: 0px 10px 0px 10px;
 }
 
+/*formatting the nav bar*/
+
 #nametag {
     color: #ffffff;
     background-color: #4aaaa5;
@@ -83,12 +86,21 @@ a.pagetags {
     float: right;
     padding: 20px;
     font-size: 20px;
+    text-decoration: none;
     border: 0px;
     margin: 0px;
     width: auto;
     color: #777777;
     background-color: #ffffff;
 }
+
+nav a:hover {
+    color: #000000;
+    font-size: 25px;
+    background-color: #666666;
+}
+
+/*formatting the main section*/
 
 p {
     font-family: Arial, Helvetica, 'Hevetica Neue' sans-serif;
@@ -111,6 +123,29 @@ img.portfolio {
     margin: 20px;
   }
 
+  /*formatting the contact form*/
+
 form {
+    padding: 20px;
+}
+      
+#name {
+    width: 100%;
+}
+      
+#email {
+    width: 100%;
+}
+      
+#message {
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+    
+}
+
+main a:hover {
+    opacity: 50%;
+
 
 }
