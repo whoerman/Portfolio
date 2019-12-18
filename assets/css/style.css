@@ -117,12 +117,17 @@ img.headshot {
     margin: 20px;
 }
 
+/*Formatting the portfolio*/
+
 img.portfolio {
     height: 200px;
     width: 300px;
     margin: 20px;
   }
 
+main a:hover {
+    opacity: 50%;
+}
   /*formatting the contact form*/
 
 form {
@@ -144,8 +149,3 @@ form {
     
 }
 
-main a:hover {
-    opacity: 50%;
-
-
-}
