@@ -14,24 +14,29 @@ header {
     width: auto;
     margin: auto;
     background-color: #ffffff;
+    display: flex;
+    justify-content: center;
 
 }
 
 nav {
     height: 80px;
     max-width: 960px;
-    margin: auto;
     background-color: #ffffff;
     padding-top: 20px;
+    flex: 1;
 }
 
 main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
     height: auto;
     width: 960px;
-    margin: auto;
     margin-top: 20px;
     background-color: #ffffff;
-
 }
 
 footer {
