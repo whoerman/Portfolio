@@ -124,6 +124,10 @@ img.headshot {
 
 /*Formatting the portfolio*/
 
+section.portfolio {
+    flex-wrap: wrap;
+}
+
 img.portfolio {
     height: 200px;
     width: 300px;
