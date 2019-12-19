@@ -54,6 +54,16 @@ a.navtags {                              /* designing the nav bar page anchors*/
     border-color: #777777;    
 }
 
+a.navtags:hover {
+    color: #111111;
+    background-color: #777777;
+}
+
+a.navtags:active {
+    color: #111111;
+    background-color: #ff0000;
+}
+
 div.main {
     flex: 1;
     display: flex;
