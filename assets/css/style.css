@@ -2,6 +2,11 @@ html {                                    /*turning on the background behind eve
     Background-color: #777777;
 }
 
+body {
+    background-image: url("./assets/images/headshot.png");
+    background-repeat: repeat;
+}
+
 div.wrapper {                             /*wrapping everything and turning on flexbox*/
     display:flex;
     flex-wrap: wrap;
