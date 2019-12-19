@@ -1,117 +1,73 @@
-html { position: relative;
+html {                                    /*turning on the background behind everything*/
     Background-color: #777777;
-    
 }
 
-body{
-    position: relative;
-    background-color: #777777;
+div.wrapper {                             /*wrapping everything and turning on flexbox*/
+    display:flex;
+    flex-wrap: wrap;
 }
 
-header {
-    position: relative;
+div.top {                                 /*defining the white box across the top*/
+    background-color: #ffffff;
     height: 100px;
-    width: auto;
-    margin: auto;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-
-}
-
-nav {
-    height: 80px;
-    max-width: 960px;
-    background-color: #ffffff;
-    padding-top: 20px;
     flex: 1;
-}
-
-main {
-    display: flex;
+    flex-direction: row;    
     justify-content: center;
+    align-items: flex-end;
+    display: flex;
 }
 
-section {
-    height: auto;
-    width: 960px;
-    margin-top: 20px;
+div.header {                              /*making the box that holds the nameplat and top nav bar*/
     background-color: #ffffff;
+    width: 960px;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
-footer {
-    position: sticky;
-    bottom: 0;
-    width:100%;
-    height: 40px;
-    margin: auto;
-    background-color: #666666;
-    border-top: 5px solid #4aaaa5;  
-    align-content: center;
-    overflow: auto;
-}
-
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
-    font-size: 30px;
-    padding: 25px 20px 10px 25px;
-}
-
-h6 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #ffffff;
-    background-color: #666666;
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
-
-}
-
-hr {
-    color: #777777;
-    background-color: #777777;
-    height: 3px;
-    margin: 0px 10px 0px 10px;
-}
-
-/*formatting the nav bar*/
-
-#nametag {
+#nameplate {                             /*designing the nameplate for the top*/
     color: #ffffff;
     background-color: #4aaaa5;
     padding: 15px;
-    border: 0px;
-    margin: 0px;
-    width: auto;
-    float: left;
+    margin: 5px;
 }
 
-a.pagetags {
-    float: right;
+nav {
+    
+}
+
+a.navtags {                              /* designing the nav bar page anchors*/
     padding: 20px;
     font-size: 20px;
     text-decoration: none;
-    border: 0px;
-    margin: 0px;
-    width: auto;
+    border-left: 4px;
+    margin-left: 4px;
     color: #777777;
     background-color: #ffffff;
+    border-color: #777777;    
 }
 
-nav a:hover {
-    color: #000000;
-    font-size: 25px;
-    background-color: #666666;
+div.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;   
 }
 
-/*formatting the main section*/
+section {
+    width: 960px;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+}
 
 p {
     font-family: Arial, Helvetica, 'Hevetica Neue' sans-serif;
     color: #777777;
     font-size: 20px;
-    padding: 5px 20px 5px 20px;
+    /*padding: 20px;*/
 
 }
 
@@ -121,40 +77,49 @@ img.headshot {
     float: left;
     margin: 20px;
 }
-
-/*Formatting the portfolio*/
-
-section.portfolio {
-    flex-wrap: wrap;
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 30px;
 }
 
-img.portfolio {
-    height: 200px;
-    width: 300px;
-    margin: 20px;
-  }
 
-main a:hover {
-    opacity: 50%;
-}
-  /*formatting the contact form*/
-
-form {
-    padding: 20px;
-}
-      
-#name {
-    width: 100%;
-}
-      
-#email {
-    width: 100%;
-}
-      
-#message {
-    height: 300px;
-    width: 100%;
-    overflow: auto;
-    
+hr {                                            /*making the horizontal rule the right collor and width*/
+    color: #777777;
+    background-color: #777777;
+    height: 3px;
+    margin: 0px 10px 0px 10px;
 }
 
+.break {                                        /*a trick to break the flexbox to go to the next line*/
+    flex-basis: 100%;
+    height: 0;
+}
+
+form {                                          /*formtting the form with flexbox*/
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 10px;
+}
+
+footer {                                        /*formatting the footer*/
+    position: sticky;
+    bottom: 0;
+    flex-flow: column wrap;
+    align-self: flex-end;
+    flex: 1;
+    height: 60px;
+    margin: auto;
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;  
+    align-content: center;
+    display: flex;
+}
+
+h6.footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background-color: #666666;
+    font-size: 10px;
+}
